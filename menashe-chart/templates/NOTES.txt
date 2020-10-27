@@ -1,0 +1,26 @@
+helm hooks -> https://helm.sh/docs/topics/charts_hooks/
+
+hook crd for less 3 version. After just crds folder
+
+annotations:
+        "helm.sh/hook": crd-install
+
+describe vprobe
+
+kubectl proxy -> http://localhost:8001/v1
+
+curl ->
+
+TOKEN=$(cat /run/secrets/kubernetes.io/serviceaccount/token)
+
+curl --cacert /run/secrets/kubernetes.io/serviceaccount/ca.crt -H "Authorization: Bearer $TOKEN"
+https://kubernetes.docker.internal:6443/apis/extensio.com/v1/namespaces/default/vprobes
+
+?labelSelector=zone=one
+
+labels -> https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
+
+few labels
+
+curl --cacert /run/secrets/kubernetes.io/serviceaccount/ca.crt -H "Authorization: Bearer $TOKEN"
+https://kubernetes.docker.internal:6443/apis/extensions.example.com/v1/namespaces/default/vprobes?labelSelector='zone in (one,two)'

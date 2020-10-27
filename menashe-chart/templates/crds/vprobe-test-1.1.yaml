@@ -1,0 +1,6 @@
+apiVersion: extensions.example.com/v1
+kind: Vprobe
+metadata:
+    name: vprobe-zone-1.1
+    labels:
+        zone: one

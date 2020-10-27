@@ -1,0 +1,6 @@
+apiVersion: extensions.example.com/v1
+kind: Vlbagent
+metadata:
+    name: vlbagent-zone-2
+    labels:
+        zone: two
