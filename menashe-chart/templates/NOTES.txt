@@ -1,10 +1,10 @@
 helm hooks -> https://helm.sh/docs/topics/charts_hooks/
 
-hook crd for less 3 version. After just crds folder
+hook crd for less 3 version. After version 3 just crds folder
 
 annotations:
         "helm.sh/hook": crd-install
-
+--------
 describe vprobe
 
 kubectl proxy -> http://localhost:8001/v1
@@ -24,3 +24,6 @@ few labels
 
 curl --cacert /run/secrets/kubernetes.io/serviceaccount/ca.crt -H "Authorization: Bearer $TOKEN"
 https://kubernetes.docker.internal:6443/apis/extensions.example.com/v1/namespaces/default/vprobes?labelSelector='zone in (one,two)'
+
+LIBRARIES
+https://github.com/kubernetes-client/java/
